@@ -1,0 +1,232 @@
+html{
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#header{
+    display: flex;
+    height: 7px;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 20px 50px;/* 70px*/
+    background-color:#ff7171; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    }
+    
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+ }
+
+#navbar li{
+    list-style: none;    /* to remove the list Bullet Point */
+    padding: 0 40px;
+    position:relative;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.2em;   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(to right, #fff2b1, #ffb9e9);
+}
+  
+.container .left 
+  {
+    padding: 30px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-right: 100px;
+
+
+  }
+.container .left h1{
+    letter-spacing: 0.2em;
+    text-align: initial;
+    font-size: 39px;
+    padding-top: 130px;
+
+
+}
+.container .left span{
+    text-align: initial;
+    font-family: sans-serif;
+    font-size:13.82px;
+    margin-right: 327.46px; 
+    margin-top: 60px;
+    line-height: 26pt;
+    padding-top: 200px;
+} 
+   
+.container .right 
+{
+    height: 100%;
+}
+.normal{
+    width:200px;
+    height: 40px;
+    color: white;
+    background-color: #ff7171;
+    text-align: center;
+    font-weight: 100;
+    margin: left 50px; 
+    border: none;
+    margin-top: 100px;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(to right, #fff2b1, #ffb9e9);
+    padding-top: 200px;
+    padding-bottom: 120px;
+    
+}
+.container1 .img
+  {
+    padding: 30px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-right: 100px;
+ }
+ .container1 .text{
+    background-color: #ff7171;
+    width: 400px;
+    height: 200px;
+    padding-left: 30px;
+    font-family: sans-serif;
+    color: black; 
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.container1 .text h1{
+    font-size: 39px;
+    letter-spacing: 0.2em;
+}
+.container1 .arrow{
+    margin-left: 40px;
+    margin-top: -23px;
+}
+
+.image-table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-left: 50px;
+    border: none;
+  }
+  
+  .image-table img {
+    max-width: 100%; 
+    display: block; 
+  }
+  
+  
+
+/* Tablet styles */
+@media screen and (max-width: 799px) {
+    /* Styles for tablets */
+    #navbar {
+        display: flex;
+        align-items: center;
+        
+        font-size: 12px;
+    }
+    .container1 .text {
+        margin-bottom: 10px;
+        
+        margin-left: 170px;
+    }
+    #header {
+        padding: 15px 30px;
+    }
+
+    #navbar li {
+        padding: 0 20px;
+    }
+
+    .container,
+    .container1 {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .container .left h1 {
+        font-size: 28px;
+    }
+
+    .container .left span {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+
+    .normal {
+        margin: 20px auto;
+    }
+    element {
+        padding-left: 100px;
+    }
+
+   
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    #header {
+        padding: 10px 20px;
+    }
+
+    #navbar li {
+        padding: 0 10px;
+    }
+
+    .container,
+    .container1 {
+        padding: 20px;
+    }
+
+    .container .left h1 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:840px){
+    #navbar li {
+       
+        padding: 20px;
+       
+    }
+    #navbar {
+       font-size: 12px;
+    }
+    .container .left {
+        padding: 30px;
+        font-family: sans-serif;
+         margin-left: 0px; 
+         margin-right: 0px; 
+    }
+    .image-table td #img1{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .image-table img {
+        max-width: 100%; 
+      }
+      .container1 .text {
+        background-color: #ff7171;
+        width: 400px;
+        height: 200px;
+        padding-left: 30px;
+        font-family: sans-serif;
+        color: black;
+        /* margin-left: 20px; */
+        margin-top: 60px;
+        margin-right: 80px;
+    } 
+}
